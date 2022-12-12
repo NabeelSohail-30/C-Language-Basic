@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a,b,ts,te,mv,m;
+
+	clrscr();
+
+	printf("\nenter table starting number =");
+	scanf("%d",&ts);
+
+	printf("\nenter table ending number =");
+	scanf("%d",&te);
+
+	printf("\nenter multiple number =");
+	scanf("%d",&mv);
+
+	for(a=ts;a<=te;a++)
+	{
+
+		clrscr();
+		for(b=1;b<=mv;b++)
+		{
+			m =(a*b);
+			printf("%d*%d=%d\n",a,b,m);
+		}
+
+		printf("press any key to continue");
+		getch();
+
+	}
+
+	getch();
+
+
+}

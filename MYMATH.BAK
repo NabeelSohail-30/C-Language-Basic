@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	clrscr();
+	int a;
+	int b;
+	int sum, mul, div, subt ;
+	a=20;
+	b=40;
+	sum= a+b;
+	subt=b-a;
+	mul=b*a;
+	div=b/a;
+
+	printf("the sum of %d and %d = %d",a,b,sum);
+	printf("\n the difference between %d and %d = %d",b,a,subt);
+	printf("\n the product of %d and %d = %d",a,b,mul);
+	printf("\n the qotient of %d by %d = %d",b,a,div);
+
+}

@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	char name[25];
+	int  a;
+
+	clrscr();
+	printf("enter name : ");
+	gets(name);
+	printf("\n\n");
+
+	a = 0;
+	while(name[a] != '\0')
+	{
+		a++;
+	}
+
+	printf("\nlength of the string %s is = %d",name,a);
+
+	getch();
+}

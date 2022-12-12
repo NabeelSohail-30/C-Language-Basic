@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	char n[6];
+	int x,y;
+
+	clrscr();
+
+	printf("enter name of 6 words \n");
+	gets(n);
+	clrscr();
+
+	for(x=1;x<=80;x+=6)
+	{
+
+		gotoxy(x,8);
+
+		printf("%s",n);
+	}
+	getch();
+
+
+}

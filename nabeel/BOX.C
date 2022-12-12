@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a,x,y;
+
+
+	clrscr();
+
+	for(x=20;x<=60;x++)
+	{
+		gotoxy(x,5);
+		printf("%c",219);
+		gotoxy(x,20);
+		printf("*");
+	}
+
+	for(y=5;y<=20;y++)
+	{
+		gotoxy(20,y);
+		printf("*");
+		gotoxy(60,y);
+		printf("*");
+	}
+
+
+
+	getch();
+
+}

@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<conio.h>
+void main(void)
+{
+	int a, b, c, d, e, f, g, h;
+	clrscr();
+	printf("enter value of a =");
+	scanf("%d",&a);
+	printf("\nenter value of b =");
+	scanf("%d",&b);
+	printf("\nvalue of a and b = %d,%d",a,b);
+	g= ~a;	/* ones compliment*/
+	c= a>>2;	/* left shift*/
+	d= a<<2;	/* right shift*/
+	e= a&b;	/* and*/
+	f= a|b;	/* or*/
+	h= a^b;	/* nor*/
+	printf("\nvalue of a & b =%d",e);
+	printf("\nvalue of a | b =%d",f);
+	printf("\nvalue of a >>2  =%d",c);
+	printf("\nvalue of a <<2 =%d",d);
+	printf("\nvalue of a~ =%d",g);
+	printf("\nvalue of a^b =%d",h);
+	getch();
+
+
+}

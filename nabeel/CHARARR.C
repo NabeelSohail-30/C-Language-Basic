@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<conio.h>
+void main(void)
+{
+	char ch[20]="raheel";
+	clrscr();
+	printf("default value of ch array is %s\n\n",ch);
+	strcpy(ch,"nabeel sohail");
+
+	ch[4]=0;
+
+	printf("%c-%d-",ch[0],ch[0]);
+	printf("%c-%d-",ch[1],ch[1]);
+	printf("%c-%d-",ch[2],ch[2]);
+	printf("%c-%d-",ch[3],ch[3]);
+	printf("%c-%d-",ch[4],ch[4]);
+	printf("%c-%d-",ch[5],ch[5]);
+	printf("%c-%d-",ch[6],ch[6]);
+	printf("%c-%d-",ch[7],ch[7]);
+	printf("%c-%d-",ch[8],ch[8]);
+	printf("%c-%d-",ch[9],ch[9]);
+	printf("%c-%d-",ch[10],ch[10]);
+	printf("%c-%d-",ch[11],ch[11]);
+	printf("%c-%d-",ch[12],ch[12]);
+	printf("%c-%d-",ch[13],ch[13]);
+	printf("%c-%d-",ch[14],ch[14]);
+	printf("%c-%d-",ch[15],ch[15]);
+	printf("%c-%d-",ch[16],ch[16]);
+	printf("%c-%d-",ch[17],ch[17]);
+	printf("%c-%d-",ch[18],ch[18]);
+	printf("%c-%d-",ch[19],ch[19]);
+	printf("\n%s",ch);
+	getch();
+
+}

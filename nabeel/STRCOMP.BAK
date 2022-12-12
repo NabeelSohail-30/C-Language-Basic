@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+void main(void)
+{
+	int comparesult
+	char ch[20];
+	clrscr();
+	printf("enter your name");
+	gets(ch);
+	printf("\nyour name is %s ",ch);
+
+	getch();
+
+}

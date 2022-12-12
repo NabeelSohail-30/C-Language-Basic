@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a,x,y;
+	textbackground(BLUE);
+
+	clrscr();
+
+	textbackground(RED);
+	textcolor(YELLOW);
+
+	/*x:  20 - 58, Y: 7-10*/
+
+	gotoxy(20,7);
+	cprintf("%c",218);
+
+	for(x=21;x<=57;x++)
+	{
+		gotoxy(x,7);
+		cprintf("%c",196);
+		gotoxy(x,10);
+		cprintf("%c",196);
+	}
+
+	gotoxy(58,7);
+	cprintf("%c",191);
+
+	for(y=8;y<=9;y++)
+	{
+		gotoxy(58,y);
+		cprintf("%c",179);
+		gotoxy(20,y);
+		cprintf("%c",179);
+	}
+
+	gotoxy(58,10);
+	cprintf("%c",217);
+
+	gotoxy(20,10);
+	cprintf("%c",192);
+
+	/*
+	for(a=21;a<=59;a++)
+	{
+		gotoxy(a,8);
+		textbackground(7);
+		cprintf(" ");
+		gotoxy(a,9);
+		cprintf(" ");
+		gotoxy(a,10);
+		cprintf(" ");
+		gotoxy(a,11);
+		cprintf(" ");
+	}
+
+
+	for(a=20;a<=58;a++)
+	{
+		gotoxy(a,7);
+		textbackground(RED);
+		cprintf(" ");
+		gotoxy(a,8);
+		cprintf(" ");
+		gotoxy(a,9);
+		cprintf(" ");
+		gotoxy(a,10);
+		cprintf(" ");
+	}*/
+
+	getch();
+}

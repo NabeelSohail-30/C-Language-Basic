@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	char name[25];
+	int  a,right,c;
+
+	clrscr();
+
+	printf("enter name : ");
+	gets(name);
+
+	printf("\nenter number of characters to be picked from Right Side : ");
+	scanf("%d",&right);
+
+
+	printf("\n");
+
+	/*  Calculate Length */
+	a = 0;
+	while(name[a] != '\0')
+	{
+		a++;
+	}
+
+	/* Check if value of right is great than length (a) then
+	    assign value of length to right variable */
+
+	if(right > a)
+	{
+		right = a;
+	}
+
+
+	for(c=(a-right);c<a;c++)
+	{
+		printf("%c",name[c]);
+	}
+
+	getch();
+}

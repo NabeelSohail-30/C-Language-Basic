@@ -1,0 +1,70 @@
+
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a,b,ts,te,mv,m;
+	int row,col;
+
+	clrscr();
+
+	printf("\nenter table starting number =");
+	scanf("%d",&ts);
+
+	printf("\nenter table ending number =");
+	scanf("%d",&te);
+
+	printf("\nenter multiple number =");
+	scanf("%d",&mv);
+
+	col=1;
+	for(a=ts;a<=te;a+=5)
+	{
+
+		clrscr();
+		row=1;
+		for(b=1;b<=mv;b++)
+		{
+			m =(a*b);
+
+			gotoxy(col,row);
+			printf("%d*%d=%d",a,b,m);
+
+			if(a+1<=te)
+			{
+				gotoxy(col+16,row);
+				printf("%d*%d=%d",a+1,b,(a+1)*b);
+			}
+
+			if(a+2<=te)
+			{
+				gotoxy(col+16*2,row);
+				printf("%d*%d=%d",a+2,b,(a+2)*b);
+			}
+
+			if(a+3<=te)
+			{
+				gotoxy(col+16*3,row);
+				printf("%d*%d=%d",a+3,b,(a+3)*b);
+			}
+
+			if(a+4<=te)
+			{
+				gotoxy(col+16*4,row);
+				printf("%d*%d=%d",a+4,b,(a+4)*b);
+			}
+
+
+			row++;
+		}
+
+		printf("\npress any key to continue");
+		getch();
+
+	}
+
+	getch();
+
+
+}

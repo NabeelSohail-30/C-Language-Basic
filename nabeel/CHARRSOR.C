@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	/*Program to sort character array variable by bubble sort method*/
+	char ch[10];
+	char swap;
+	int a,b;
+	int len=0;
+
+	clrscr();
+
+	for(a=0;a<=9;a++)
+	{
+		printf("\nenter character %d : ",a+1);
+		ch[a] = getche();
+	}
+	len=a-2;
+
+	for(a=0;a<=len;a++)
+	{
+		for(b=0;b<=8-a;b++)
+		{
+			if(ch[b] > ch[b+1])
+			{
+				swap = ch[b];
+				ch[b] = ch[b+1];
+				ch[b+1] = swap;
+			}
+		}
+	}
+
+	for(a=0;a<=9;a++)
+	{
+		printf("\n%c",ch[a]);
+	}
+
+	getch();
+}

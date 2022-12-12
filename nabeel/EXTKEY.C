@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	char ch;
+	int a;
+	int endkeypressed=0;
+
+	clrscr();
+
+	do
+	{
+		ch = getch();
+
+		if(ch==0)	/* means Extended key has been pressed */
+		{
+			ch = getch();
+			switch(ch)
+			{
+				case 72:
+				printf("\nyou pressed up arrow key");
+				break;
+
+				case 80:
+				printf("\nyou pressed down arrow key");
+				break;
+
+				case 77:
+				printf("\nyou pressed right arrow key");
+				break;
+
+				case 75:
+				printf("\nyou pressed left arrow key");
+				break;
+
+				case 79:
+				endkeypressed=1;
+				/* return;   */
+
+				default:
+				printf("\nyou did not press arrow key");
+			}
+
+		}
+
+		if(endkeypressed==1)
+			break;
+
+	} while(1==1);
+}

@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	/*Program to find multiple values from the array variable*/
+	int num[10];
+	int a,find,num2,pos=0;
+	int foundvalue=0;
+
+	clrscr();
+
+	for(a=0;a<=9;a++)
+	{
+		printf("enter number %d : ",a+1);
+		scanf("%d",&num[a]);
+	}
+
+	printf("enter the value to find : ");
+	scanf("%d",&find);
+
+	for(a=0;a<=9;a++)
+	{
+		if(num[a] == find)
+		{
+			printf("\nthe value %d you searched found at position %d",num[a],a+1);
+			foundvalue=1;
+		}
+	}
+	if(foundvalue == 0)
+	{
+		printf("\nthe value %d you searched not found",find);
+	}
+
+	getch();
+}

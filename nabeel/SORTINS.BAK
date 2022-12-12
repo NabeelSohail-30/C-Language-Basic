@@ -1,0 +1,91 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int num[3];
+	int a,c,d,flag=0,t;
+
+	clrscr();
+
+	/* for(d=0;d>=0;d--)
+	{
+		printf("%d",d);
+		break;
+	}
+	printf("\nAfter break value of d = %d",d);
+	getch();
+	return;*/
+
+	for(a=0;a<=9;a++)
+	{
+		printf("enter number %d : ",a);
+		scanf("%d",&num[a]);
+	}
+
+	/* Start Processing Insertion Sort Method */
+
+	for(c = 1 ; c <= 10 - 1; c++)
+	{
+		t = num[c];
+		printf("\nValue of c=%d, t=%d",c,t);
+
+		for (d = c - 1 ; d >= 0; d--)
+		{
+			printf("\n Value of d=%d",d);
+
+			if (num[d] > t)
+			{
+				num[d+1] = num[d];
+				flag = 1;
+				printf("\n If Cond True inside d Loop, num[d+1]=%d,num[d]=%d, flag=%d\n",num[d+1],num[d],flag);
+
+				for(a=0;a<=9;a++)
+					printf("%d\t",num[a]);
+			}
+			else
+			{
+				printf("\n Condition False \n");
+				for(a=0;a<=9;a++)
+					printf("%d\t",num[a]);
+
+			break;
+			}
+
+			printf("\n D Loop One Cycle completed\n");
+			for(a=0;a<=9;a++)
+				printf("%d\t",num[a]);
+
+			getch();
+		}
+
+		if (flag)   /* if(flag) means if (flag=1) , if(!flag) means if(flag=0) */
+		{
+			num[d+1] = t;
+			printf("if flag=true then value of d = %d, d+1=%d, num[d] = %d , num[d+1] = %d , t = %d\n ",d,d+1,num[d],num[d+1],t);
+
+			for(a=0;a<=9;a++)
+				printf("%d\t",num[a]);
+
+		}
+
+
+		printf("\nAfter completion one time loop of c and all cycles loop\n");
+
+		for(a=0;a<=9;a++)
+		{
+			printf("%d\t",num[a]);
+		}
+		getch();
+	}
+	/* End Processing Insertion Sort Method */
+
+	printf("\nafter sorting\n");
+
+	for(a=0;a<=9;a++)
+	{
+		printf("\n%d",num[a]);
+	}
+
+	getch();
+}

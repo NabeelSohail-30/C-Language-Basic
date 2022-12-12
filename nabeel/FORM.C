@@ -1,0 +1,214 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a,x,y;
+	char name[10],fname[10],dob[10];
+	textbackground(9);
+
+	clrscr();
+
+	/*first box*/
+	for(a=20;a<=30;a++)
+	{
+		gotoxy(a,4);
+		textbackground(7);
+		cprintf(" ");
+		gotoxy(a,5);
+		cprintf(" ");
+		gotoxy(a,6);
+		cprintf(" ");
+		gotoxy(a,7);
+		cprintf(" ");
+	}
+
+
+	for(a=19;a<=29;a++)
+	{
+		gotoxy(a,4);
+		textbackground(4);
+		cprintf(" ");
+		gotoxy(a,5);
+		cprintf(" ");
+		gotoxy(a,6);
+		cprintf(" ");
+	}
+
+	textbackground(4);
+	textcolor(14);
+
+
+	gotoxy(19,4);
+	cprintf("%c",218);
+
+	for(x=20;x<=29;x++)
+	{
+		gotoxy(x,4);
+		cprintf("%c",196);
+		gotoxy(x,6);
+		cprintf("%c",196);
+	}
+
+	gotoxy(30,4);
+	cprintf("%c",191);
+
+	gotoxy(30,6);
+	cprintf("%c",217);
+
+	gotoxy(19,6);
+	cprintf("%c",192);
+
+	gotoxy(19,5);
+	cprintf("%c",179);
+
+	gotoxy(30,5);
+	cprintf("%c",179);
+
+
+
+	/*Second box*/
+	for(a=20;a<=30;a++)
+	{
+		gotoxy(a,9);
+		textbackground(7);
+		cprintf(" ");
+		gotoxy(a,10);
+		cprintf(" ");
+		gotoxy(a,11);
+		cprintf(" ");
+		gotoxy(a,12);
+		cprintf(" ");
+	}
+
+
+	for(a=19;a<=29;a++)
+	{
+		gotoxy(a,9);
+		textbackground(RED);
+		cprintf(" ");
+		gotoxy(a,10);
+		cprintf(" ");
+		gotoxy(a,11);
+		cprintf(" ");
+	}
+
+	textbackground(RED);
+	textcolor(YELLOW);
+
+
+	gotoxy(19,9);
+	cprintf("%c",218);
+
+	for(x=20;x<=29;x++)
+	{
+		gotoxy(x,9);
+		cprintf("%c",196);
+		gotoxy(x,11);
+		cprintf("%c",196);
+	}
+
+	gotoxy(30,9);
+	cprintf("%c",191);
+
+	gotoxy(30,11);
+	cprintf("%c",217);
+
+	gotoxy(19,11);
+	cprintf("%c",192);
+
+	gotoxy(19,10);
+	cprintf("%c",179);
+
+	gotoxy(30,10);
+	cprintf("%c",179);
+
+
+
+	/*third box*/
+	for(a=20;a<=30;a++)
+	{
+		gotoxy(a,14);
+		textbackground(7);
+		cprintf(" ");
+		gotoxy(a,15);
+		cprintf(" ");
+		gotoxy(a,16);
+		cprintf(" ");
+		gotoxy(a,17);
+		cprintf(" ");
+	}
+
+
+	for(a=19;a<=29;a++)
+	{
+		gotoxy(a,14);
+		textbackground(RED);
+		cprintf(" ");
+		gotoxy(a,15);
+		cprintf(" ");
+		gotoxy(a,16);
+		cprintf(" ");
+	}
+
+	textbackground(RED);
+	textcolor(YELLOW);
+
+
+	gotoxy(19,14);
+	cprintf("%c",218);
+
+	for(x=20;x<=29;x++)
+	{
+		gotoxy(x,14);
+		cprintf("%c",196);
+		gotoxy(x,16);
+		cprintf("%c",196);
+	}
+
+	gotoxy(30,14);
+	cprintf("%c",191);
+
+	gotoxy(30,16);
+	cprintf("%c",217);
+
+	gotoxy(19,16);
+	cprintf("%c",192);
+
+	gotoxy(19,15);
+	cprintf("%c",179);
+
+	gotoxy(30,15);
+	cprintf("%c",179);
+
+
+		/*start inputting*/
+	textbackground(1);
+	textcolor(15);
+
+	gotoxy(4,5);
+	cprintf("name : ");
+
+	gotoxy(4,10);
+	cprintf("father name : ");
+
+	gotoxy(4,15);
+	cprintf("date of birth :");
+
+	textbackground(4);
+	textcolor(0);
+
+	gotoxy(20,5);
+	gets(name);
+
+	gotoxy(20,10);
+	gets(fname);
+
+	gotoxy(20,15);
+	gets(dob);
+
+
+	getch();
+
+
+}

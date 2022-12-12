@@ -1,0 +1,203 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int ad,sb,ml,dv;
+	int n1,n2;
+	char op='';
+	char op2='';
+
+do
+{
+	clrscr();
+
+	gotoxy(33,3);
+	printf("mini calculator");
+
+	gotoxy(23,8);
+	printf("a-addition");
+
+	gotoxy(45,8);
+	printf("s-subtraction");
+
+	gotoxy(23,12);
+	printf("m-multiplication");
+
+	gotoxy(45,12);
+	printf("d-division");
+
+	gotoxy(39,15);
+	printf("e-exit");
+
+	gotoxy(27,18);
+	printf("choose an option to continue");
+
+	gotoxy(35,20);
+	printf("a,s,m,d,e");
+	gotoxy(40,22);
+	op = getche();
+
+	if(op == 'a')
+	{
+
+	do
+	{
+		clrscr();
+		gotoxy(36,5);
+		printf("calculator");
+		gotoxy(39,7);
+		printf("for");
+		gotoxy(37,9);
+		printf("addition");
+
+		gotoxy(28,13);
+		printf("enter first number (n1) =");
+		gotoxy(55,13);
+		scanf("%d",&n1);
+
+		gotoxy(28,15);
+		printf("enter second number (n2) =");
+		gotoxy(55,15);
+		scanf("%d",&n2);
+
+		ad = (n1+n2);
+
+		gotoxy(31,17);
+		printf("sum of n1 and n2 = %d",ad);
+
+		gotoxy(27,19);
+		printf("do you want to continue ?");
+		gotoxy(38,21);
+		printf("(y/n)");
+		gotoxy(40,23);
+		op2 = getche();
+
+
+	} while (op2 =='y');
+	}
+
+	else if(op == 's')
+	{
+
+	do
+	{
+		clrscr();
+		gotoxy(36,5);
+		printf("calculator");
+		gotoxy(39,7);
+		printf("for");
+		gotoxy(35,9);
+		printf("subtraction");
+
+		gotoxy(28,13);
+		printf("enter first number (n1) =");
+		gotoxy(55,13);
+		scanf("%d",&n1);
+
+		gotoxy(28,15);
+		printf("enter second number (n2) =");
+		gotoxy(55,15);
+		scanf("%d",&n2);
+
+		sb = (n2-n1);
+
+		gotoxy(21,17);
+		printf("the result of subtracting n2 from n1 = %d",sb);
+
+		gotoxy(27,19);
+		printf("do you want to continue ?");
+		gotoxy(38,21);
+		printf("(y/n)");
+		gotoxy(40,23);
+		op2 = getche();
+
+
+	}while(op2=='y');
+	}
+
+	else if(op == 'm')
+	{
+
+	do
+	{
+		clrscr();
+		gotoxy(36,5);
+		printf("calculator");
+		gotoxy(39,7);
+		printf("for");
+		gotoxy(34,9);
+		printf("multiplication");
+
+		gotoxy(28,13);
+		printf("enter first number (n1) =");
+		gotoxy(55,13);
+		scanf("%d",&n1);
+
+		gotoxy(28,15);
+		printf("enter second number (n2) =");
+		gotoxy(55,15);
+		scanf("%d",&n2);
+
+		ml = (n1*n2);
+
+		gotoxy(28,17);
+		printf("product of n1 and n2 = %d",ml);
+
+		gotoxy(27,19);
+		printf("do you want to continue ?");
+		gotoxy(38,21);
+		printf("(y/n)");
+		gotoxy(40,23);
+		op2 = getche();
+
+	}while(op2=='y');
+	}
+
+	else if(op == 'd')
+	{
+
+	do
+	{
+		clrscr();
+		gotoxy(36,5);
+		printf("calculator");
+		gotoxy(39,7);
+		printf("for");
+		gotoxy(37,9);
+		printf("division");
+
+		gotoxy(28,13);
+		printf("enter first number (n1) =");
+		gotoxy(55,13);
+		scanf("%d",&n1);
+
+		gotoxy(28,15);
+		printf("enter second number (n2) =");
+		gotoxy(55,15);
+		scanf("%d",&n2);
+
+		dv = (n1/n2);
+
+		gotoxy(24,17);
+		printf("the result of dividing n1 by n2 = %d",dv);
+
+		gotoxy(27,19);
+		printf("do you want to continue ?");
+		gotoxy(38,21);
+		printf("(y/n)");
+		gotoxy(40,23);
+		op2 = getche();
+
+	}while(op2=='y');
+	}
+	else if(op=='e')
+	{
+		goto end;
+	}
+
+
+} while (op !='e');
+end:
+	getch();
+}

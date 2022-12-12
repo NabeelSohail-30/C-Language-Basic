@@ -1,0 +1,14 @@
+#include <conio.h>
+#include <stdio.h>
+void main (void)
+{   	clrscr();
+	printf("%s\n","STRING EXAMPLES");
+	printf("%s%s","my name is nabeel","\nI live in Karachi");
+	printf("\n%s\t%s\n","my college name is national college","i study in first year comp science");
+	getch();
+
+
+
+
+
+}

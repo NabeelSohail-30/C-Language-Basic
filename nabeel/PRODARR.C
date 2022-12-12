@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	/*Program to multiply element values */
+
+	int num[10];
+	int a;
+	long int product=1;
+
+	clrscr();
+
+	for(a=0;a<=9;a++)
+	{
+		printf("enter number : ");
+		scanf("%d",&num[a]);
+	}
+
+	for(a=0;a<=9;a++)
+	{
+		product = product * num[a];
+	}
+
+	printf("product of all 10 elements = %ld",product);
+
+	getch();
+}

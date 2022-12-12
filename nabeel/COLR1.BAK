@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	int a=100;
+
+	clrscr();
+	textcolor(2);
+	gotoxy(20,5);
+	cprintf("My Name is Sohail");
+	gotoxy(20,8);
+	cprintf("My Name is Nabeel");
+
+	getch();
+
+}

@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	/* Character Array Program */
+
+	char ch[20];    /* Declare character array of 20
+			elements / characters (0-19) */
+	char myname[] = {'S','o','h','a','i','l','\0'};
+
+	char fathername[10];
+
+	int a=0;
+	clrscr();
+
+	printf("Get Array Element default value without assigning value\n");
+
+	/* Access Array Element by using Index Position */
+	printf("%c",ch[0]);
+	printf("%c",ch[1]);
+	printf("%c",ch[2]);
+	printf("%c",ch[3]);
+	printf("%c",ch[4]);
+	printf("%c",ch[5]);
+
+	/* Using Loop */
+	printf("\n Access every element by using for loop\n");
+
+	for(a=0;a<=19;a++)
+	{
+		/* if (ch[a]=='\0')
+			break; */
+
+		printf("%c",ch[a]);
+	}
+
+	printf("\n Get ch Array value by using C %%s\n");
+	printf("%s",ch);   /* it will print till NULL character found
+				\0 = NULL
+			   */
+
+	/* Assigning values to ch array */
+	ch[0] = 'S';
+	ch[1]='o';
+	ch[2]='h';
+	ch[3]='a';
+	ch[4]='i';
+	ch[5]='l';
+	ch[6] = ' ';
+	ch[7] = 'A';
+
+	printf("\n Get Ch array values after assigning values\n");
+
+	for(a=0;a<=19;a++)
+	{
+		printf("%c",ch[a]);
+	}
+	printf("\nget ch array value by using C %%s\n");
+	printf("%s",ch);
+
+
+	/* Explicity (Manually) assign NULL Value to Character Array */
+	ch[4]=0;
+	/* OR */
+	ch[4]='\0';
+
+	printf("\nGet CH Array values after explictly assign NULL Character to element number 5\n");
+
+	for(a=0;a<=19;a++)
+	{
+		printf("%c",ch[a]);
+	}
+	printf("\nget ch array value by using c %%s\n");
+	printf("%s",ch);
+
+
+	printf("\nGet myname array value which already assigned Sohail at the time of Varible declaration\n");
+	printf("\n Using Loop\n");
+
+	a=0;
+	while(myname[a] != '\0')
+	{
+		printf("%c",myname[a]);
+		a++;
+	}
+
+	printf("\nBy Using printf %%s \n");
+	printf("%s",myname);
+
+	strcpy(fathername,"Abdul Habib");
+	printf("\n Father Name = %s",fathername);
+
+	printf("\nEnter Name: ");
+	gets(myname);
+
+	/* Print MyName value character by character */
+	printf("\n Print Using Single Character by Loop\n");
+	for(a=0;a<=9;a++)
+	{
+		printf("%d,",myname[a]);
+	}
+
+	printf("\nYou Entered Name: %s",myname);
+
+	getch();
+
+
+}

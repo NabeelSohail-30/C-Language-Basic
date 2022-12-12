@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main(void)
+{
+	char name[25];
+	int len,pos,asc,upcs;
+
+	clrscr();
+	printf("enter name in upper case to change in lower case : ");
+	gets(name);
+
+	len = 0;
+	while(name[len] != '\0')
+	{
+		len++;
+	}
+
+	for(pos=0;pos<len;pos++)
+	{
+		/* asc is integer variable
+		name[pos] is character
+		if we assign character value into integer varaible
+		then C will store the ASCII code of that character
+		*/
+
+		asc = name[pos];
+
+
+
+		if(asc >= 0 && asc <= 90)
+		{
+			upcs = asc + 32 ;
+
+		}
+
+	}
+
+
+
+	getch();
+}
